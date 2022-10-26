@@ -1,0 +1,1010 @@
+root{
+    font-family: "Montserrat-Regular";
+}
+
+.shadow-social {
+    box-shadow: 0 0.15rem 0rem 8px rgb(33 40 50 / 15%) !important;
+}
+
+.text-menu-navbar{
+    font-weight: bolder !important;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.menu-option-navbar:hover{
+    border-style: outset !important;
+    border: 8px solid #ffcd39 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.title-sections{
+    font-size: 60px;
+    font-weight: bolder !important;
+}
+
+.subtitle-sections{
+    font-size: 2.2rem;
+    color: #2e4999;
+}
+
+.text-paragraph-item{
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0.25rem;
+    margin-left: -0.75rem;
+}
+
+#overlay-background-nosotros{
+    height: 270px;
+    background-image: url("{{ asset('/assets/img/landing/sobre_nosotros.svg') }}");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*#main-slider{
+    height: auto;
+    background-image: linear-gradient(rgb(24, 79, 201),rgba(0,0,0,0.5)), url("{{ asset('/assets/img/landing/fondo_slider.jpg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+#main-slider, #main-slider-2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("{{ asset('/assets/img/landing/fondo_slider.jpg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#color-overlay, #color-overlay-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 77 185);
+    opacity: 0.6;
+}
+
+.overlay-background-about-test{
+    height: 800px;
+    background-image: linear-gradient(rgb(118, 122, 131),rgba(0,0,0,0.5)), url("{{ asset('/assets/img/landing/shake_2.jpg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container-can-i-help{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed !important;
+    background: url("{{ asset('/assets/img/landing/shake_2.jpg') }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay-can-i-help{
+    width: 100%;
+    height: 100%;
+    background: rgb(118, 122, 131);
+    opacity: .5;
+    position: absolute;
+    z-index: 1;
+}
+
+#imagen-test{
+    z-index: 2;
+}
+
+#container-canihelp{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url("{{ asset('/assets/img/landing/fondo_slider.jpg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#overlay-canihelp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(118, 122, 131);
+    opacity: 0.6;
+}
+
+/*.overlay-background-about-test{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("{{ asset('/assets/img/landing/shake_2.jpg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-color-about-test{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(118, 122, 131);
+    opacity: 0.6;
+}*/
+
+.overlay-background-about{
+    height: 500px;
+    background-image: url("{{ asset('/assets/img/landing/podemos_ayudar.svg') }}");
+    /*background-image: linear-gradient(rgb(69, 95, 171),rgba(0,0,0,0.5)), url("{{ asset('/assets/img/landing/podemos_ayudar.svg') }}");*/
+    /*background-color: rgb(69, 95, 171);*/
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-background-help1{
+    height: 1000px;
+    background-image: url("{{ asset('/assets/img/landing/obtener_financiamiento.svg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.overlay-background-footer{
+    height: 550px;
+    background-image: url("{{ asset('/assets/img/logos/circles_footer.png') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.overlay-background-about-us{
+    height: auto;
+    /*background-image: linear-gradient(rgb(69, 95, 171),rgba(0,0,0,0.5)));*/
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-background-about-our-values{
+    padding-right: 0;
+    padding-left: 0;
+    height: auto;
+    opacity: 1;
+    /*background-image: linear-gradient(rgb(69, 95, 171),rgba(0,0,0,0.5)));*/
+    background-color: rgb(69, 95, 171);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-background-qa{
+    height: auto;
+    /*background-image: linear-gradient(rgb(69, 95, 171),rgb(0 65 224 / 50%)), url("{{ asset('assets/img/landing/background_qa.jpg') }}");*/
+    background-image: linear-gradient(rgb(69, 95, 171),rgb(0 65 224 / 50%));
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section-timeline{
+    width: 100%;
+    background-size: cover;
+    height: 1300px;
+    background-image: url("{{ asset('assets/img/landing/timeline_first_nabu.png') }}");
+    background-repeat: no-repeat;
+}
+
+.img-timeline-first{
+    width: 100%;
+    height: 700px;
+    background-image: url("{{ asset('assets/img/landing/timeline_first_nabu.png') }}");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #f8f4f4;
+}
+
+.img-timeline-second{
+    width: 100%;
+    height: 700px;
+    background-image: url("{{ asset('assets/img/landing/timeline_second_nabu.png') }}");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #f8f4f4;
+}
+
+.item-time-lapse{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #f8f4f4;
+    border-radius: 50%;
+    background-color: #f6ae2d;
+    color: #FFFFFF;
+    padding: 5rem;
+}
+
+.subitem-lapse{
+    position: absolute;
+    padding: 1rem;
+    width: 62px;
+    height: 62px;
+    background-color: #ffffff;
+    color: #455fab;
+    border-radius: 50%;
+    left: 134px;
+    top: -18px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.lista-ventaja{
+    width: 22rem;
+    height: 29rem;
+}
+
+.lista-ventaja ul.list-group{
+    border-radius: 18px
+}
+
+.card-item-avantage{
+    margin-right: 3.3rem;
+    margin-left: 3rem;
+    width: 40%;
+}
+
+.icon-item-briefcase, .icon-item-university{
+    font-size: 3em;
+    color: #FFFFFF
+}
+
+.list-item-avantage-desavantage{
+    background-color: #2e4999;
+    height: 100%
+}
+
+.title-text-avantage-institution {
+    transform: rotate(270deg);
+    top: 295px;
+    left: -180px;
+    color: #2e4999;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#avantage, #unavantage{
+    height: 100%;
+}
+
+.title-text-avantage-bussiness {
+    transform: rotate(90deg);
+    top: 293px;
+    right: -177px;
+    color: #2e4999;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card-avantages{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.text-our-values{
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 20px
+}
+
+.list-item-our-values{
+    background-color: rgb(69, 95, 171); height: 100%
+}
+
+.title-our-values-item{
+    font-size: 30px;
+}
+
+#container-test{
+    display: flex;
+}
+
+.gallery {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.bakground-landing-main{
+    background-attachment: fixed;
+    background-image: url("{{ asset('/assets/img/landing/fondo_slider.jpg') }}");
+    background-size: cover;
+    height: 800px;
+}
+
+.bakground-landing-canIhelp{
+    background-image: url("{{ asset('/assets/img/landing/shake_2.jpg') }}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.item {
+    margin: 0px;
+    position: relative;
+}
+
+.overlay-main{
+    background: rgb(134, 174, 231);
+    color: white;
+    opacity: 0.5;
+}
+
+.overlay-canHelp{
+    background: rgb(41 50 63);
+    color: black;
+    opacity: 0.5;
+}
+
+.item .item__description {
+    align-items: center;
+    display: flex;
+    font-size: 22px;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.container-landig{;
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+}
+
+.img-back{
+    position: absolute;
+    z-index: 1;
+}
+
+
+#overlay {
+    align-items: center;
+    animation: fadeIn 200ms;
+    background-color: rgba(0, 0, 0, 0.83);
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 9999;
+}
+
+#overlay.mostrar {
+    display: flex;
+}
+
+#cerrar {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 17px;
+    margin-bottom: 8px;
+    margin-left: 130px;
+}
+
+#cerrar:hover {
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+/* Dispositivos extra pequeños (teléfonos, 600px y menos. Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600 px y más) */
+@media only screen and (max-width: 600px) {
+
+    #item__img_ayudar{
+        height: 1000px !important;
+    }
+
+    .dropdown-user .dropdown-menu .dropdown-item{
+        font-size: 12px !important;
+    }
+
+    a.navbar-brand img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #main-slider{
+        padding-top: 103.9531px;
+        padding-bottom: 15px;
+        /*                background-size: 100% auto;*/
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .bakground-landing-main{
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    #main-slider-2{
+        padding-top: 403.9531px;
+        padding-bottom: 15px;
+        /*                background-size: 100% auto;*/
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    #container-can-i-help{
+        height: 800px;
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+
+    #slogan-landing{
+        font-size: 44px !important;
+        font-weight: bold !important;
+        text-align: center;
+    }
+
+    .icon-slug{
+        font-size: 2rem !important;
+    }
+
+    #card-bussines, #card-if{
+        height: 100% !important;
+    }
+
+    .column-card-actions{
+        margin: 0.5rem;
+    }
+
+    #card-bussines div.card-footer > a.btn, #card-if div.card-footer > a.btn{
+        display: block !important;
+    }
+
+    #card-bussines div.card-header, #card-if div.card-header{
+    }
+
+    #card-bussines div.card-body > div.flex-wrap> p.title-card-actions-slug, #card-if div.card-body > div.flex-wrap> p.title-card-actions-slug{
+        font-size: 30px !important;
+    }
+
+    #card-bussines div.card-body > div.row > div.col > p.text-article-card, #card-if div.card-body > div.row > div.col > p.text-article-card{
+        font-size: 20px !important;
+        text-align: justify;
+    }
+
+    #container-img-how-help{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .container-why-nabu{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .subtitle-normal{
+        font-size: 3rem;
+    }
+
+    .article-normal{
+        font-size: 18px;
+    }
+
+    #cards-avantages{
+        display: inline-block !important;
+    }
+
+    .card-item-avantage {
+        margin-right: 2.3rem;
+        margin-left: 1rem;
+    }
+
+    .lista-ventaja {
+        width: 19rem !important;
+        height: 100% !important;
+    }
+
+    #container-list-ourvalues{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #container-ourvalues{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #subtitle-ourvalues, #container-list-ourvalues{
+        font-size: 29px !important;
+    }
+
+    .list-item-our-values div.w-25{
+        width: 100% !important;
+    }
+
+    .list-item-our-values div.w-25 >p{
+        text-align: left !important;
+    }
+
+    .list-item-our-values div.w-75{
+        width: 100% !important;
+    }
+
+    #container-qa{
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+    }
+
+    .subtitle-content-qa{
+        font-size: 2rem !important;
+    }
+
+    #subfooter{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #content-footer{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+    #form-contact{
+        width: 100% !important;
+    }
+
+    .parrafo-contact{
+        text-align: center !important;
+    }
+
+    .section-logo-footer{
+        margin-left: 115px!important;
+        margin-right: 92px!important;
+    }
+
+    #container-img-layout-misionvision{
+        display: none !important;
+    }
+
+    #container-synopsis-misionvision{
+        width: 100% !important;
+    }
+
+    .card-mision-vision{
+        width: 100% !important;
+    }
+
+    #send-contact{
+        width: 60% !important;
+        margin-left: 65px !important;
+    }
+
+    #avantage .list-group-item, #unavantage .list-group-item{
+        display: flex !important;
+        align-content: stretch;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-paragraph-item{
+        font-size: 20px;
+    }
+
+    .title-sections {
+        font-size: 55px;
+        font-weight: bolder !important;
+    }
+
+    .subtitle-sections {
+        font-size: 30px;
+        color: #2e4999;
+    }
+
+    #imagen-de-vision{
+        display: none !important;
+    }
+
+    #container-cards-mision-vision{
+        padding-right: 0.75rem;
+        padding-left: 1.75rem;
+    }
+
+    .overlay-background-help1{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600 px y más) */
+@media only screen and (min-width: 600px) {
+    a.navbar-brand img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #main-slider{
+        padding-top: 103.9531px;
+        padding-bottom: 15px;
+    }
+
+    #main-slider-2{
+        padding-bottom: 15px;
+    }
+
+    #slogan-landing{
+        font-size: 35px !important;
+        font-weight: bold !important;
+        text-align: center;
+    }
+
+    #container-img-how-help{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .container-why-nabu{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .subtitle-normal{
+        font-size: 3rem;
+    }
+
+    .article-normal{
+        font-size: 1.2rem;
+    }
+
+    #cards-avantages{
+        display: inline-block !important;
+    }
+
+    .card-item-avantage {
+        margin-right: 2.3rem;
+        margin-left: 4rem;
+    }
+
+    .lista-ventaja {
+        width: 35rem !important;
+        height: 100% !important;
+    }
+
+
+    #container-list-ourvalues{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #container-ourvalues{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #subtitle-ourvalues, #container-list-ourvalues{
+        font-size: 29px !important;
+    }
+
+    .list-item-our-values div.w-25{
+        width: 100% !important;
+    }
+
+    .list-item-our-values div.w-25 >p{
+        text-align: left !important;
+    }
+
+    .list-item-our-values div.w-75{
+        width: 100% !important;
+    }
+
+    #container-qa{
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+    }
+
+    #container-img-layout-misionvision{
+        display: none;
+    }
+
+    #container-synopsis-misionvision{
+        width: 100%;
+    }
+
+    .card-mision-vision{
+        width: 20rem;
+    }
+
+    .text-paragraph-item{
+        font-size: 20px;
+    }
+
+    #section-container-cards-mision-vision{
+        margin-right: -0.75rem;
+        margin-left: -0.75rem;
+    }
+
+    #container-cards-mision-vision{
+        padding-right: 0.75rem;
+        padding-left: 1.75rem;
+    }
+
+}
+/* Dispositivos medianos (tabletas horizontales, 768 px y más). */
+@media only screen and (min-width: 768px) {
+    a.navbar-brand img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    #main-slider{
+        padding-top: 103.9531px;
+        padding-bottom: 15px;
+    }
+
+    #slogan-landing{
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-align: left;
+    }
+
+    .overlay-background-about-test{
+        height: auto !important;
+    }
+
+    #card-bussines, #card-if{
+        height: 100% !important;
+    }
+
+    #card-bussines div.card-footer > a.btn, #card-if div.card-footer > a.btn{
+        display: block !important;
+    }
+
+    #container-img-how-help{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .container-why-nabu{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .subtitle-normal{
+        font-size: 3rem;
+    }
+
+    .article-normal{
+        font-size: 1.2rem;
+    }
+
+    .lista-ventaja {
+        width: 18rem;
+        height: 100%;
+    }
+
+    #container-qa{
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+    }
+
+    .subtitle-content-qa{
+        font-size: 62px;
+    }
+
+    #subfooter{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    #content-footer{
+        margin-right: 0.25rem !important;
+        margin-left: 0.25rem !important;
+    }
+    #form-contact{
+        width: 80% !important;
+    }
+
+    #container-img-layout-misionvision{
+        display: none;
+    }
+
+    #container-synopsis-misionvision{
+        width: 100% !important;
+    }
+
+    .card-mision-vision{
+        width: 20rem !important;
+    }
+
+    .text-paragraph-item{
+        font-size: 20px;
+    }
+
+}
+/* Dispositivos grandes (laptops/desktops, 992px y más) */
+@media only screen and (min-width: 992px) {
+    a.navbar-brand img{
+        width: 18% !important;
+        height: 10% !important;
+    }
+
+    #main-slider{
+        padding-top: 103.9531px;
+        padding-bottom: 15px;
+    }
+
+    .overlay-background-about-test{
+        height: auto !important;
+    }
+
+    #slogan-landing{
+        font-size: 3rem !important;
+        font-weight: bold !important;
+    }
+
+    #card-bussines div.card-footer > a.btn, #card-if div.card-footer > a.btn{
+        display: inline !important;
+    }
+
+    .subtitle-normal{
+        font-size: 3rem;
+    }
+
+    .article-normal{
+        font-size: 1.2rem;
+    }
+
+    .card-item-avantage {
+        /* margin-right: 3.3rem; */
+        /* margin-left: 4rem; */
+        width: 40%;
+    }
+
+    .card-item-avantage {
+        /* margin-right: 3.3rem; */
+        /* margin-left: 4rem; */
+        width: 40%;
+    }
+
+    #cards-avantages{
+        display: flex !important;
+    }
+
+    .lista-ventaja {
+        width: 22rem;
+        height: 100%;
+    }
+
+    .list-item-our-values div.w-25{
+        width: 25% !important;
+    }
+
+    .list-item-our-values div.w-25 >p{
+        text-align: right !important;
+    }
+
+    .list-item-our-values div.w-75{
+        width: 75% !important;
+    }
+
+    #container-img-layout-misionvision{
+        display: block;
+    }
+
+    #container-synopsis-misionvision{
+        width: 60% !important;
+    }
+
+    .card-mision-vision{
+        width: 20rem !important;
+    }
+
+    .text-paragraph-item{
+        font-size: 20px;
+    }
+
+
+}
+/* Dispositivos extragrandes (portátiles y equipos de escritorio grandes, 1200 px y más) */
+@media only screen and (min-width: 1200px) {
+    a.navbar-brand img{
+        width: 18% !important;
+        height: 10% !important;
+    }
+
+    #main-slider{
+        padding-top: 103.9531px;
+        padding-bottom: 15px;
+    }
+
+    #slogan-landing{
+        font-size: 3rem !important;
+        font-weight: bold !important;
+    }
+
+    #card-bussines div.card-footer > a.btn, #card-if div.card-footer > a.btn{
+        display: inline !important;
+    }
+
+    .subtitle-normal{
+        font-size: 3rem;
+    }
+
+    .article-normal{
+        font-size: 1.2rem;
+    }
+
+    .lista-ventaja {
+        width: 22rem;
+        height: 100%;
+    }
+
+    #container-img-layout-misionvision{
+        display: block;
+    }
+
+    #container-synopsis-misionvision{
+        width: 60% !important;
+    }
+
+    .card-mision-vision{
+        width: 20rem !important;
+    }
+
+    .text-paragraph-item{
+        font-size: 20px;
+    }
+
+}

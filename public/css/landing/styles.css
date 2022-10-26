@@ -1,0 +1,395 @@
+.title-landing{
+    font-family: "Montserrat-SemiBold";
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.subtitle-landing-heading{
+    font-family: "Montserrat-SemiBold";
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+.slogan-landing{
+    font-family: "Montserrat-SemiBold";
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.title-card-bussines, .title-card-institution{
+    font-family: "Montserrat-SemiBold";
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.text-article-card{
+    font-family: "Montserrat-Regular";
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #2e4999;
+}
+
+.subtitle-cursive{
+    font-family: "Montserrat-BoldItalic";
+    font-size: 3rem;
+    font-weight: bold;
+}
+.subtitle-normal{
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle-medium{
+    font-family: "Montserrat-Medium";
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.article-normal{
+    font-family: "Montserrat-Regular";
+    font-weight: bolder;
+    color: #2e4999;
+    font-size: 1.2rem;
+}
+
+.text-options-menu{
+    font-family: "Montserrat-Light";
+    font-weight: normal;
+    color: #f8f4f4;
+    font-size: 1.2rem;
+}
+
+.item-concept-number{
+    font-family: "Montserrat-BoldItalic";
+    font-weight: bold;
+    font-size: 2rem
+}
+.item-text-article-normal{
+    font-family: "Montserrat-Regular";
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+}
+
+
+.jaralax{
+    position: relative;
+    z-index: 0;
+}
+
+.btn-items-options-landing{
+    background-color: #2e4999;
+    color: white;
+}
+
+.labels-group-input{
+    background-color: #3e589f;
+    color: white;
+}
+
+.btn-items-options-landing-secondary{
+    background-color: #afafb5;
+    color: #f8f4f4;
+}
+
+.head-nav-sections{
+    background-color: #2e4999;
+    color: white;
+}
+
+.items-options-landing:hover{
+    background-color: #2e4999;
+    color: white;
+}
+
+.btn-load-more{
+    background-color: #2e4999;
+    color: white;
+}
+
+.btn-load-more:hover{
+    background-color: #3e589f;
+    color: white;
+}
+
+.btn-action-proposal{
+    font-weight: bold;
+    background-color: #f6ae2d;
+    color: white;
+}
+
+.btn-action-proposal:hover{
+    font-weight: bold;
+    background-color: #bb7d0d;
+    color: white;
+}
+
+.call-to-action{
+    font-weight: bold;
+    background-color: #f6ae2d;
+    color: #050505;
+}
+
+.call-to-action:hover{
+    font-weight: bold;
+    background-color: #bb7d0d;
+    color: #000000;
+}
+
+.items-container-landing{
+    background-color:#efeff3;
+}
+
+.items-oportunities{
+    background-color : #efeff3;
+}
+
+.background-brand-heading{
+    background-color: #3c508c;
+    color: white;
+}
+
+.row-items-landing {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.75rem;
+    margin-left: -1.75rem;
+}
+
+.wave {
+    height: 100%;
+    width: 100%;
+    background: #16222A;
+    background: -webkit-linear-gradient(to right, #efeff3,#efeff3);
+    background: linear-gradient(to right,#efeff3,#efeff3);
+}
+
+.img-avatar-sector{
+    padding: 0;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+/*.overlay-background{
+    height: 500px;
+    background-image: linear-gradient(rgb(69, 95, 171),rgba(0,0,0,0.5)), url("{{ asset('/assets/img/logos/visitar-rascacielos.jpeg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-background-about{
+    height: 500px;
+    background-image: linear-gradient(rgb(69, 95, 171),rgba(0,0,0,0.5)), url("{{ asset('/assets/img/logos/business-intelligence.jpeg') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overlay-background-footer{
+    height: 500px;
+    background-image: linear-gradient(#efeff3, #cdcdd2), url("{{ asset('/assets/img/logos/circles_footer.png') }}");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+.icon-image-resp{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    border: 4px double #bcbcbc !important;
+}
+
+.fa-2x {
+    font-size: 9em;
+}
+.text-icon-sector {
+    color: #a7b7b2 !important;
+}
+.pt-5, .py-5 {
+    padding-top: 3rem !important;
+}
+.ml-5, .mx-5 {
+    margin-left: 6px!important
+}
+
+.resaltado {
+    box-shadow: inset 0 25px 20px 0px rgb(20 19 7 / 80%);
+    transform: translateY(-10px) scale(0.02);
+}
+
+.text-heading{
+    color: #2e4999;
+}
+
+.btn-social-nabu{
+    color:#ffffff;
+    background-color:  #2e4999;
+    border-color: #ffffff;
+}
+
+.shadow-social {
+    box-shadow: 0 0.15rem 0rem 2px rgb(33 40 50 / 15%) !important;
+}
+
+.parrafo-contact{
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
+}
+
+.avatar-lg {
+    height: 10.5rem;
+    width: 10.5rem;
+}
+
+.avatar {
+    display: inline-flex;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.items-help-land{
+    display: inline-flex;
+    margin-right: 3rem;
+    background-color: #bb7d0d;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.items-because-list{
+    display: inline-flex;
+    border-radius: 12%;
+    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color: #fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
+
+.divider {
+    width: 100%;
+    position: relative;
+    height: 5vw;
+    pointer-events: none;
+    -webkit-mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,98 50,98 C66.6666667,98 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff'/%3e%3c/svg%3e");
+    mask-image: url("data:image/svg+xml;utf8,%3csvg viewBox='0 0 100 100' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3e%3cpath d='M0,0 C16.6666667,66 33.3333333,98 50,98 C66.6666667,98 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z' fill='%23fff'/%3e%3c/svg%3e");
+    /* -webkit-mask-size: 100% 101%; */
+    mask-size: 100% 101%;
+    /* background: #394749; */
+}
+
+.number-item-timeline{
+    color:  #bb7d0d;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.title-item-timeline{
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.text-concept-item-timeline{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.points-suspended-item{
+    width: 30px;
+    font-weight: bolder;
+    font-size: 51px;
+    transform: rotate(90deg);
+
+}
+
+.icon-item-line{
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: inset 0 0 0 14px #bb7d0d;
+}
+
+
+.effect-adhesive{
+    width:100%;
+    height:100%;
+    padding-top:50px;
+    filter:contrast(1);
+    background: #ffffff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    div.lista-nuestros-valores > ul > li{
+        flex-wrap: wrap;
+    }
+
+    div.container-box-mision-vision{
+        position: static !important;
+    }
+
+    div.container-box-mision-vision > .mision{
+        position: static !important;
+    }
+
+    div.container-box-mision-vision > .vision{
+        position: static !important;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .image-mision-vision{
+        height: 420px !important;
+    }
+    div.container-box-mision-vision{
+        position: static !important;
+    }
+
+    div.container-box-mision-vision > .mision{
+        position: static !important;
+    }
+
+    div.container-box-mision-vision > .vision{
+        position: static !important;
+    }
+
+}

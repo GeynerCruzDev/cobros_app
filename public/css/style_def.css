@@ -1,0 +1,37 @@
+.login-form {background: transparent;padding: 5px 5px 5px;border-radius: 2px;}
+.link{font-size: 11px;margin-left:5px}
+.link:hover{text-decoration: underline !important;}
+.login-panel {background-color: #ffffffc4;width: 300px;border-radius: 0.5em;box-shadow: 0 0 6px rgba(140, 140, 140, 0.5),0 0 6px rgba(140, 140, 140, 0.5);text-align: center;position: absolute;top: 30%;left: 50%;margin: -150px ;box-sizing: border-box;z-index: 100;}
+.login-panel:hover {transition: .5s;box-shadow: 0 0 14px rgba(140, 140, 140, 0.5), 0 0 14px rgba(140, 140, 140, 0.5);}
+.checkbox_item {margin: 5px;vertical-align: middle;}
+.form-group {margin-bottom: 16px !important;}
+.response_validation{position: absolute;left: 100px;}
+html, body, .unix-login, .container-fluid {height: 100%;width: 100%;margin: 0;padding: 0;overflow: hidden;}
+body{
+    background : #203c8b;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.color-success{color: #7c70e7 !important;}
+.input-group-addon{border: 0px;padding: 2px;}
+#image-avatar{
+    border-radius: 50%;
+}
+
+#img_profile{
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+main{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title-spectator-slogan {
+    font-size: 2.4rem;
+}
