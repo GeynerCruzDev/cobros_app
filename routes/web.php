@@ -33,3 +33,6 @@ Route::get('/user/new', function(){
     return 'Agregar nuevo alumno';
 });
 
+Route::get('php-info',function(){
+    return phpinfo();
+});
