@@ -14,4 +14,14 @@ class UserPaymentController extends Controller
         return view('payments',compact('alumnos'));
     }
 
+    public function nuevoAlumno()
+    {
+        return view('students.new_student');
+    }
+
+    public function guardarAlumno(Request $request)
+    {
+        dd($request);
+    }
+
 }

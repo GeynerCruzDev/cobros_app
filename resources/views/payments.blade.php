@@ -28,7 +28,7 @@
                     <div class="card-header">Lista de usuarios</div>
                     <div class="row m-3">
                         <div class="col-md-6">
-                            <button class="btn btn-danger"><em class="fas fa-plus mr-2"></em> Agregar alumno</button>
+                            <a href="{{ route('nuevo-alumno') }}" class="btn btn-danger"><em class="fas fa-plus mr-2"></em> Agregar alumno</a>
                         </div>
                     </div>
                     <div class="card-block p-4 mt-3">
@@ -39,6 +39,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Matricula</th>
+                            <th scope="col">Sede</th>
                             <th scope="col">Acciones</th>
                             </tr>
                         </thead>
@@ -48,6 +49,7 @@
                                 <td>{{ $key }}</td>
                                 <td>{{ $alumno->name }}</td>
                                 <td>125812</td>
+                                <td>Campeche</td>
                                 <td>
                                     <button class="btn btn-icon text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editar alumno"><em class="fas fa-edit"></em></button>
                                 </td>

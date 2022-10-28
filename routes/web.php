@@ -29,9 +29,8 @@ Route::get('/dashboard',function(){
     return 'Tablero principal';
 });
 Route::get('/users-payment', [UserPaymentController::class,'listaAlumnos']);
-Route::get('/user/new', function(){
-    return 'Agregar nuevo alumno';
-});
+Route::get('/user/new', [ UserPaymentController::class ,'nuevoAlumno'])->name('nuevo-alumno');
+Route::post('/user/save', [ UserPaymentController::class ,'guardarAlumno'])->name('guardar-alumno');
 
 Route::get('php-info',function(){
     return phpinfo();
