@@ -52,6 +52,7 @@
                                 <td>Campeche</td>
                                 <td>
                                     <button class="btn btn-icon text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editar alumno"><em class="fas fa-edit"></em></button>
+                                    <button class="btn btn-icon text-dark new_payment" data-toggle="tooltip" data-placement="top" title="" data-original-title="Registrar pago"><em class="fas fa-money-bill"></em></button>
                                 </td>
                             </tr>
                             @endforeach
@@ -72,13 +73,110 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modalNuevoPago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrar nuevo pago</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Nombre del alumno</label>
+                                <input type="text" class="form-control" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Fecha de aplicación</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Forma de pago</label>
+                                <input type="text" class="form-control" placeholder="Ingresa la forma de pago">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Concepto</label>
+                                <input type="text" class="form-control" placeholder="Ingresa el concepto">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Importe</label>
+                                <input type="text" class="form-control" placeholder="Ingresa el importe">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="">Cantidad</label>
+                                <input type="number" class="form-control" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Folio</label>
+                                <input type="text" class="form-control" placeholder="Ingresa el folio">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">No. Autorización</label>
+                                <input type="text" class="form-control" placeholder="Ingresa el No. de autorizacion">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="">Fecha de operación</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="">Comentario</label>
+                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Ingresa un comentario"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary cerrar" >Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
 
 @section('js_custom')
 
     <script>
         $(document).ready(function(){
+            var body = $('body');
+            var modalPago = $('#modalNuevoPago');
             RenderTable.applyCustomStyleTo('#tbl-students');
+
+            body.on('click','.cerrar',function(e){
+                e.preventDefault();
+                modalPago.modal('hide');
+            });
+
+            body.on('click','.new_payment',function(e){
+                e.preventDefault();
+                modalPago.modal('show');
+            });
+
         });
     </script>
 

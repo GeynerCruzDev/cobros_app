@@ -21,7 +21,10 @@ class UserPaymentController extends Controller
 
     public function guardarAlumno(Request $request)
     {
-        dd($request);
+        //dd($request);
+        //throw new \Exception('Hubo un error');
+        return 'Guardando alumno ...';
+
     }
 
 }
