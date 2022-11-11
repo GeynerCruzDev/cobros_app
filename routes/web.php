@@ -31,6 +31,7 @@ Route::get('/dashboard',function(){
 Route::get('/users-payment', [UserPaymentController::class,'listaAlumnos']);
 Route::get('/user/new', [ UserPaymentController::class ,'nuevoAlumno'])->name('nuevo-alumno');
 Route::post('/user/save', [ UserPaymentController::class ,'guardarAlumno'])->name('guardar-alumno');
+Route::post('/payments/save',[UserPaymentController::class,'savePayment'])->name('save-payment');
 
 Route::get('php-info',function(){
     return phpinfo();

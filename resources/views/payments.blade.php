@@ -52,7 +52,7 @@
                                 <td>Campeche</td>
                                 <td>
                                     <button class="btn btn-icon text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Editar alumno"><em class="fas fa-edit"></em></button>
-                                    <button class="btn btn-icon text-dark new_payment" data-toggle="tooltip" data-placement="top" title="" data-original-title="Registrar pago"><em class="fas fa-money-bill"></em></button>
+                                    <button class="btn btn-icon text-dark new_payment" student="{{$alumno->name  }}" id-db="{{$alumno->id }}" data-toggle="tooltip" data-placement="top" title="" data-original-title="Registrar pago"><em class="fas fa-money-bill"></em></button>
                                 </td>
                             </tr>
                             @endforeach
@@ -84,13 +84,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Nombre del alumno</label>
-                                <input type="text" class="form-control" disabled>
+                                <input id="student_name" type="text" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Fecha de aplicación</label>
-                                <input type="date" class="form-control">
+                                <input id="application_date" type="date" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -98,25 +98,25 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="">Forma de pago</label>
-                                <input type="text" class="form-control" placeholder="Ingresa la forma de pago">
+                                <input id="method_payment" type="text" class="form-control" placeholder="Ingresa la forma de pago">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="">Concepto</label>
-                                <input type="text" class="form-control" placeholder="Ingresa el concepto">
+                                <input id="concept" type="text" class="form-control" placeholder="Ingresa el concepto">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="">Importe</label>
-                                <input type="text" class="form-control" placeholder="Ingresa el importe">
+                                <input id="amount" type="text" class="form-control" placeholder="Ingresa el importe">
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="">Cantidad</label>
-                                <input type="number" class="form-control" placeholder="0">
+                                <input id="quantity" type="number" class="form-control" placeholder="0">
                             </div>
                         </div>
                     </div>
@@ -124,19 +124,19 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="">Folio</label>
-                                <input type="text" class="form-control" placeholder="Ingresa el folio">
+                                <input id="folio" type="text" class="form-control" placeholder="Ingresa el folio">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="">No. Autorización</label>
-                                <input type="text" class="form-control" placeholder="Ingresa el No. de autorizacion">
+                                <input id="auth_number" type="text" class="form-control" placeholder="Ingresa el No. de autorizacion">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="">Fecha de operación</label>
-                                <input type="date" class="form-control">
+                                <input id="operation_date" type="date" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -144,14 +144,14 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="">Comentario</label>
-                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Ingresa un comentario"></textarea>
+                                <textarea class="form-control" name="" id="comment" cols="30" rows="10" placeholder="Ingresa un comentario"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary cerrar" >Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+                    <button id="save_payment" type="button" class="btn btn-primary">Send message</button>
                 </div>
             </div>
         </div>
@@ -174,7 +174,40 @@
 
             body.on('click','.new_payment',function(e){
                 e.preventDefault();
+                var student_name = $(this).attr('student');
+                var id_student = $(this).attr('id-db');
+                $('#student_name').val( student_name );
+                $('#save_payment').attr('id-db',id_student);
                 modalPago.modal('show');
+            });
+
+            $('#save_payment').click(function(e){
+                e.preventDefault();
+
+                var data = {
+                    student_id : $(this).attr('id-db'),
+                    application_date : $('#application_date').val(),
+                    payment_type : $('#method_payment').val(),
+                    concept : $('#concept').val(),
+                    amount : $('#amount').val(),
+                    quantity : $('#quantity').val(),
+                    folio: $('#folio').val(),
+                    auth_number : $('#auth_number').val(),
+                    operation_date : $('#operation_date').val(),
+                    comment: $('#comment').val(),
+                };
+
+                axios.post('{{ url('/payments/save') }}', data).then(function( response){
+                    console.log(response);
+                    alertify.success('Usuario agregado correctamente');
+                    //$('#userModal').modal('hide');
+                    return response;
+                }).then(function(response){
+                    $('#modalNuevoPago').modal('hide');
+                }).catch(function(e){
+                    console.log(e);
+                });
+
             });
 
         });
